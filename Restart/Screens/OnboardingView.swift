@@ -17,7 +17,7 @@ struct OnboardingView: View {
     @State private var isAnimating: Bool = false
     @State private var imageOffset: CGSize = .zero
     @State private var indicatorOpacity: Double = 1.0
-    @State private var textTitle: String = "Share."
+    @State private var textTitle: String = "Partilhar."
     
     let hapticFeedback = UINotificationFeedbackGenerator()
     
@@ -41,8 +41,8 @@ struct OnboardingView: View {
                         .id(textTitle)
                     
                     Text("""
-                    It's not how much we give but
-                    how much love we put into giving.
+                    Não é o quanto damos,
+                    mas sim o amor que dedicamos a dar.
                     """)
                     .font(.title3)
                     .fontWeight(.light)
@@ -77,7 +77,7 @@ struct OnboardingView: View {
                                         
                                         withAnimation(.linear(duration: 0.25)) {
                                             indicatorOpacity = 0
-                                            textTitle = "Give."
+                                            textTitle = "Dar."
                                         }
                                     }
                                 }
@@ -86,7 +86,7 @@ struct OnboardingView: View {
                                     
                                     withAnimation(.linear(duration: 0.25)) {
                                         indicatorOpacity = 1
-                                        textTitle = "Share."
+                                        textTitle = "Partilhar."
                                     }
                                 }
                         )//: GESTURE
@@ -114,7 +114,7 @@ struct OnboardingView: View {
                         .fill(Color.white.opacity(0.2))
                         .padding(8)
                     
-                    Text("Get Started")
+                    Text("Começar")
                         .font(.system(.title3, design: .rounded))
                         .fontWeight(.bold)
                         .foregroundColor(.white)

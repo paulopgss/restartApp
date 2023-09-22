@@ -38,7 +38,7 @@ struct HomeView: View {
             
             // MARK: - CENTER
             
-            Text("The time that leads to mastery is dependent on the intensity of our focus.")
+            Text("O tempo que leva à mestria depende da intensidade da nossa concentração.")
                 .font(.title3)
                 .fontWeight(.light)
                 .foregroundColor(.secondary)
@@ -57,7 +57,7 @@ struct HomeView: View {
             }) {
                 Image(systemName: "arrow.triangle.2.circlepath.circle.fill")
                     .imageScale(.large)
-                Text("Restart")
+                Text("Reiniciar")
                     .font(.system(.title3, design: .rounded))
                     .fontWeight(.bold)
             }//: BUTTON
